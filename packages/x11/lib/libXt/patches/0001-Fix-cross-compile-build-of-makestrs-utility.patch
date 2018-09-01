@@ -1,0 +1,24 @@
+From 7c78d234655730daab9029d4f84f8e458ab6f667 Mon Sep 17 00:00:00 2001
+From: Garrett Brown <themagnificentmrb@gmail.com>
+Date: Sun, 2 Sep 2018 18:01:20 -0700
+Subject: [PATCH] Fix cross-compile build of makestrs utility
+
+---
+ util/Makefile.am | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/util/Makefile.am b/util/Makefile.am
+index 800b35b..70e6cc8 100644
+--- a/util/Makefile.am
++++ b/util/Makefile.am
+@@ -13,6 +13,7 @@ EXTRA_DIST = \
+ 
+ AM_CFLAGS = $(XT_CFLAGS)
+ makestrs_SOURCES = makestrs.c
++makestrs_CFLAGS =
+ 
+ 
+ # Man page
+-- 
+2.17.1
+

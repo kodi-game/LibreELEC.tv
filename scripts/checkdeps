@@ -102,7 +102,7 @@ case "$DISTRO" in
       ;;
     *)
       deps+=(g++ mkfontscale mkfontdir bdftopcf xsltproc java python)
-      deps_pkg+=(g++ xfonts-utils xfonts-utils xfonts-utils xsltproc default-jre python)
+      deps_pkg+=(g++ xfonts-utils xfonts-utils xfonts-utils xsltproc default-jdk python)
       perl_pkg=(libjson-perl libxml-parser-perl)
       ;;
 esac

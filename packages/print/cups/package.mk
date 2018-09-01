@@ -26,5 +26,5 @@ PKG_CONFIGURE_OPTS_TARGET="--libdir=/usr/lib \
                            --disable-unit-tests"
 
 makeinstall_target() {
-  make BUILDROOT="$INSTALL/../.INSTALL_PKG"
+  make BUILDROOT="$SYSROOT_PREFIX" install
 }
