@@ -3,13 +3,12 @@
 # Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="peripheral.joystick"
-PKG_VERSION="383fe07746e002673e64b06876617723c2308f04"
-PKG_SHA256="69fd6b8c5721aa3d2d44c0d8c93a197c331d48b5396fdb49cf55e9869e305aef"
-PKG_REV="100"
+PKG_VERSION="17ad73c7efb683d56e1d71e57397aa8349b78022"
+PKG_REV="101"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
-PKG_SITE="https://github.com/xbmc/peripheral.joystick"
-PKG_URL="https://github.com/xbmc/peripheral.joystick/archive/$PKG_VERSION.tar.gz"
+PKG_SITE="https://github.com/kodi-game/peripheral.joystick"
+PKG_URL="https://github.com/kodi-game/peripheral.joystick/archive/$PKG_VERSION.tar.gz"
 PKG_DEPENDS_TARGET="toolchain kodi-platform p8-platform"
 PKG_SECTION=""
 PKG_SHORTDESC="peripheral.joystick: Joystick support in Kodi"
