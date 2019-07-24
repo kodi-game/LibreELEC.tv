@@ -13,7 +13,7 @@ PKG_PATCH_DIRS="$KODI_VENDOR"
 
 case $KODI_VENDOR in
   *)
-    PKG_VERSION="retroplayer-18.4"
+    PKG_VERSION="retroplayer-gl"
     #PKG_SHA256="bc1ef0e271d0b6ce2e1be7546ad4f7d330930d7631cc19a9bbc5f75ddc586166"
     PKG_URL="https://github.com/garbear/xbmc/archive/$PKG_VERSION.tar.gz"
     PKG_SOURCE_NAME="kodi-$PKG_VERSION.tar.gz"
