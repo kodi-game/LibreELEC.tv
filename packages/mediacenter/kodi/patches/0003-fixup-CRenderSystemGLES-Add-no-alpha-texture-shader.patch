@@ -1,0 +1,33 @@
+From dffce7cdb0c23a01b33acb80347cc10b3ceb335f Mon Sep 17 00:00:00 2001
+From: Garrett Brown <themagnificentmrb@gmail.com>
+Date: Thu, 1 Aug 2019 16:16:33 -0700
+Subject: [PATCH 3/3] fixup! CRenderSystemGLES: Add no-alpha texture shader
+
+---
+ system/shaders/GLES/2.0/gles_shader_texture_noblend.frag | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+diff --git a/system/shaders/GLES/2.0/gles_shader_texture_noblend.frag b/system/shaders/GLES/2.0/gles_shader_texture_noblend.frag
+index 8cc66c94c9..ab37bd22af 100644
+--- a/system/shaders/GLES/2.0/gles_shader_texture_noblend.frag
++++ b/system/shaders/GLES/2.0/gles_shader_texture_noblend.frag
+@@ -26,14 +26,12 @@ varying vec4 m_cord0;
+ 
+ void main ()
+ {
+-  vec4 rgb;
+-
+-  rgb = texture2D(m_samp0, m_cord0.xy);
++  vec3 rgb = texture2D(m_samp2, m_core0.xy).rgb
+ 
+ #if defined(KODI_LIMITED_RANGE)
+   rgb.rgb *= (235.0 - 16.0) / 255.0;
+   rgb.rgb += 16.0 / 255.0;
+ #endif
+ 
+-  gl_FragColor = rgb;
++  gl_FragColor = vec4(rgb, 1.0);
+ }
+-- 
+2.20.1
+
