@@ -3,8 +3,7 @@
 # Copyright (C) 2017-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="kodi"
-PKG_VERSION="27b156a54a8222aaa957b6d96e993706140729fb"
-PKG_SHA256="2bbcced185559f2328e5ec78aa4305a248331dddf6cd9fb3ee89561a682004f4"
+PKG_VERSION="d70ce980f766ab9ed70b73cf74c3fb295cb154f9"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.kodi.tv"
 PKG_URL="https://github.com/xbmc/xbmc/archive/${PKG_VERSION}.tar.gz"
@@ -13,6 +12,9 @@ PKG_DEPENDS_UNPACK="commons-lang3 commons-text groovy"
 PKG_DEPENDS_HOST="toolchain"
 PKG_LONGDESC="A free and open source cross-platform media player."
 PKG_BUILD_FLAGS="+speed"
+
+# TODO
+#PKG_DEPENDS_TARGET+=" lmdb"
 
 configure_package() {
   # Single threaded LTO is very slow so rely on Kodi for parallel LTO support
@@ -254,6 +256,7 @@ configure_package() {
                          -DENABLE_INTERNAL_EXIV2=OFF \
                          -DENABLE_INTERNAL_FFMPEG=OFF \
                          -DENABLE_INTERNAL_FLATBUFFERS=OFF \
+                         -DENABLE_INTERNAL_LMDB=OFF \
                          -DENABLE_INTERNAL_SPDLOG=OFF \
                          -DENABLE_UDEV=ON \
                          -DENABLE_DBUS=ON \
@@ -265,6 +268,7 @@ configure_package() {
                          -DENABLE_APP_AUTONAME=OFF \
                          -DENABLE_TESTING=OFF \
                          -DENABLE_LCMS2=OFF \
+                         -DENABLE_KADEMLIA=OFF \
                          -DADDONS_CONFIGURE_AT_STARTUP=OFF \
                          -Dgroovy_SOURCE_DIR=$(get_build_dir groovy) \
                          -Dapache-commons-lang_SOURCE_DIR=$(get_build_dir commons-lang3) \
@@ -325,7 +329,6 @@ pre_configure_target() {
 post_makeinstall_target() {
   mkdir -p ${INSTALL}/.noinstall
   mv ${INSTALL}/usr/share/kodi/addons/skin.estuary \
-     ${INSTALL}/usr/share/kodi/addons/service.xbmc.versioncheck \
      ${INSTALL}/.noinstall
 
   rm -rf ${INSTALL}/usr/bin/kodi
