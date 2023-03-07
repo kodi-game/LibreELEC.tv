@@ -46,4 +46,10 @@ if [ "${MEDIACENTER}" = "kodi" ]; then
   if listcontains "${GRAPHIC_DRIVERS}" "nvidia-ng"; then
     PKG_DEPENDS_TARGET+=" nvidia-vaapi-driver"
   fi
+
+  PKG_DEPENDS_TARGET+=" game.libretro"
+  PKG_DEPENDS_TARGET+=" game.shader.presets"
+  PKG_DEPENDS_TARGET+=" inputstream.adaptive"
+  PKG_DEPENDS_TARGET+=" vfs.libarchive"
+  PKG_DEPENDS_TARGET+=" vfs.rar"
 fi
