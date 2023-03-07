@@ -3,11 +3,10 @@
 # Copyright (C) 2017-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="kodi"
-PKG_VERSION="be91aeb26388351f8e7ac0324d04164abe274ebf"
-PKG_SHA256="2de8de3a019ddd5bac0df13ce9d46b08ed927289cef8d2d6d9d6454b57c2073b"
+PKG_VERSION="3a2134597ded6ca076c8d121e563d2ddb3472401"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.kodi.tv"
-PKG_URL="https://github.com/xbmc/xbmc/archive/${PKG_VERSION}.tar.gz"
+PKG_URL="https://github.com/garbear/xbmc/archive/${PKG_VERSION}.tar.gz"
 PKG_DEPENDS_TARGET="toolchain JsonSchemaBuilder:host TexturePacker:host Python3 zlib systemd lzo pcre2 swig:host libass curl exiv2 fontconfig fribidi tinyxml tinyxml2 libjpeg-turbo freetype libcdio taglib libxml2 libxslt nlohmann-json sqlite ffmpeg crossguid libdvdnav libfmt lirc libfstrcmp flatbuffers:host flatbuffers libudfread spdlog libxkbcommon"
 PKG_DEPENDS_UNPACK="commons-lang3 commons-text groovy"
 PKG_DEPENDS_HOST="toolchain"
@@ -17,6 +16,9 @@ PKG_BUILD_FLAGS="+speed"
 if [ "${TARGET_ARCH}" = "arm" ]; then
   PKG_BUILD_FLAGS+=" -gold"
 fi
+
+# TODO
+PKG_DEPENDS_TARGET+=" lmdb"
 
 configure_package() {
   # Single threaded LTO is very slow so rely on Kodi for parallel LTO support
@@ -252,6 +254,7 @@ configure_package() {
                          -DENABLE_INTERNAL_FFMPEG=OFF \
                          -DENABLE_INTERNAL_FLATBUFFERS=OFF \
                          -DENABLE_INTERNAL_MARIADBCLIENT=OFF \
+                         -DENABLE_INTERNAL_LMDB=OFF \
                          -DENABLE_INTERNAL_SPDLOG=OFF \
                          -DENABLE_UDEV=ON \
                          -DENABLE_DBUS=ON \
@@ -263,6 +266,7 @@ configure_package() {
                          -DENABLE_APP_AUTONAME=OFF \
                          -DENABLE_TESTING=OFF \
                          -DENABLE_LCMS2=OFF \
+                         -DENABLE_KADEMLIA=OFF \
                          -DADDONS_CONFIGURE_AT_STARTUP=OFF \
                          -Dgroovy_SOURCE_DIR=$(get_build_dir groovy) \
                          -Dapache-commons-lang_SOURCE_DIR=$(get_build_dir commons-lang3) \
@@ -325,7 +329,6 @@ pre_configure_target() {
 post_makeinstall_target() {
   mkdir -p ${INSTALL}/.noinstall
   mv ${INSTALL}/usr/share/kodi/addons/skin.estuary \
-     ${INSTALL}/usr/share/kodi/addons/service.xbmc.versioncheck \
      ${INSTALL}/.noinstall
 
   rm -rf ${INSTALL}/usr/bin/kodi

@@ -35,6 +35,7 @@ if [ "${MEDIACENTER}" = "kodi" ]; then
 
   if [ "${JOYSTICK_SUPPORT}" = "yes" ]; then
     PKG_DEPENDS_TARGET+=" peripheral.joystick"
+    PKG_DEPENDS_TARGET+=" peripheral.xarcade"
   fi
 
   get_graphicdrivers
