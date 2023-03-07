@@ -2,8 +2,7 @@
 # Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="game.libretro"
-PKG_VERSION="22.5.0-Piers"
-PKG_SHA256="b1f34377f6d98692355fc4215393942ae9cdf63badd85d55609201c9024d69b6"
+PKG_VERSION="ce268125cc16074a7ca6eb61b083b595ddd6b1a8"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL-2.0-or-later"
