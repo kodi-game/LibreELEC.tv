@@ -1,5 +1,5 @@
 --- a/version.txt
 +++ b/version.txt
 @@ -14 +14 @@
--ADDON_REPOS repository.xbmc.org|https://mirrors.kodi.tv
-+ADDON_REPOS repository.xbmc.org|https://mirrors.kodi.tv,repository.libreelec.tv|https://addons.libreelec.tv
+-ADDON_REPOS repository.xbmc.org|https://mirrors.kodi.tv,repository.jurialmunkey|https://raw.githubusercontent.com/jurialmunkey
++ADDON_REPOS repository.xbmc.org|https://mirrors.kodi.tv,repository.jurialmunkey|https://raw.githubusercontent.com/jurialmunkey,repository.libreelec.tv|https://addons.libreelec.tv
