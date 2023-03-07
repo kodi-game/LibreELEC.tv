@@ -3,8 +3,7 @@
 # Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="peripheral.joystick"
-PKG_VERSION="21.1.2-Omega"
-PKG_SHA256="41a6fe50bca81a0d70f88e9fb6c087ed7aec9bfbd18745edef123409ccd1608c"
+PKG_VERSION="2343e7738a36bc278d3571fec7b2290e14eec680"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
