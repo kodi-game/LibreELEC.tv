@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="BSD"
 PKG_SITE="https://github.com/kodi-game/game.libretro.bk"
 PKG_URL="https://github.com/kodi-game/game.libretro.bk/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-bk"
+PKG_DEPENDS_TARGET="toolchain kodi-platform bk_emulator"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.bk: bk for Kodi"
 
