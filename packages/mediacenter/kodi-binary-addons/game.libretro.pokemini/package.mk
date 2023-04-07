@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="https://github.com/kodi-game/game.libretro.pokemini"
 PKG_URL="https://github.com/kodi-game/game.libretro.pokemini/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-pokemini"
+PKG_DEPENDS_TARGET="toolchain kodi-platform pokemini"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.pokemini: PokeMini emulator for Kodi"
 
