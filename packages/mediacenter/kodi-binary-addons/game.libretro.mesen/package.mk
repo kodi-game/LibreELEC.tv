@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="https://github.com/kodi-game/game.libretro.mesen"
 PKG_URL="https://github.com/kodi-game/game.libretro.mesen/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-mesen"
+PKG_DEPENDS_TARGET="toolchain kodi-platform mesen"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.mesen: mesen for Kodi"
 
