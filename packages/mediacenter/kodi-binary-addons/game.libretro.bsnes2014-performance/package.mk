@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="GPLv3"
 PKG_SITE="https://github.com/kodi-game/game.libretro.bsnes2014-performance"
 PKG_URL="https://github.com/kodi-game/game.libretro.bsnes2014-performance/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-bsnes2014-performance"
+PKG_DEPENDS_TARGET="toolchain kodi-platform bsnes2014"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.bsnes2014-performance: bSNES 2014 for Kodi (performance profile)"
 
