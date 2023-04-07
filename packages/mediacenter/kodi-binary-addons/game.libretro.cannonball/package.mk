@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="Non-commercial"
 PKG_SITE="https://github.com/kodi-game/game.libretro.cannonball"
 PKG_URL="https://github.com/kodi-game/game.libretro.cannonball/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-cannonball"
+PKG_DEPENDS_TARGET="toolchain kodi-platform cannonball"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.cannonball: Cannonball: An Enhanced OutRun Engine for Kodi"
 

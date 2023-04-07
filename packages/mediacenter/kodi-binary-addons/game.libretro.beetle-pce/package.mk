@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="GPLv2"
 PKG_SITE="https://github.com/kodi-game/game.libretro.beetle-pce"
 PKG_URL="https://github.com/kodi-game/game.libretro.beetle-pce/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-beetle-pce"
+PKG_DEPENDS_TARGET="toolchain kodi-platform beetle_pce"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.beetle-pce: Beetle PCE Fast for Kodi"
 

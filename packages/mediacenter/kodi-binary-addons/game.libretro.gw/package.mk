@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="https://github.com/kodi-game/game.libretro.gw"
 PKG_URL="https://github.com/kodi-game/game.libretro.gw/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-gw"
+PKG_DEPENDS_TARGET="toolchain kodi-platform gw_libretro"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.gw: gw for Kodi"
 
