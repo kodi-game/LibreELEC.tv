@@ -8,7 +8,7 @@ PKG_REV="1"
 PKG_LICENSE="GPLv2"
 PKG_SITE="https://github.com/kodi-game/game.libretro.beetle-saturn"
 PKG_URL="https://github.com/kodi-game/game.libretro.beetle-saturn/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-beetle-saturn"
+PKG_DEPENDS_TARGET="toolchain kodi-platform kodi-platform beetle_saturn"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.beetle-saturn: Beetle saturn for Kodi"
 
