@@ -9,7 +9,7 @@ PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="https://github.com/kodi-game/game.libretro.quicknes"
 PKG_URL="https://github.com/kodi-game/game.libretro.quicknes/archive/${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain kodi-platform libretro-quicknes"
+PKG_DEPENDS_TARGET="toolchain kodi-platform quicknes"
 PKG_SECTION=""
 PKG_LONGDESC="game.libretro.quicknes: QuickNES emulator for Kodi"
 
