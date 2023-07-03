@@ -2,8 +2,8 @@
 # Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="game.libretro.uae"
-PKG_VERSION="4.9.1.55-Nexus"
-PKG_SHA256="4b8c528325901108cc9dc62b2dde8bc10126446a91a7dab6258e5173bd332372"
+PKG_VERSION="4.9.1.58-Nexus"
+PKG_SHA256="70ad0a22161012bf74597be1d67b6fa88804e041508e7106416375c1eee16473"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
