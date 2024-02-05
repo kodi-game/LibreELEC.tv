@@ -49,6 +49,9 @@ if [ "${MEDIACENTER}" = "kodi" ]; then
   fi
 
   PKG_DEPENDS_TARGET+=" game.libretro"
+  PKG_DEPENDS_TARGET+=" game.libretro.a5200"
+  PKG_DEPENDS_TARGET+=" game.libretro.atari800"
+  PKG_DEPENDS_TARGET+=" game.libretro.prosystem"
   PKG_DEPENDS_TARGET+=" game.shader.presets"
   PKG_DEPENDS_TARGET+=" inputstream.adaptive"
   PKG_DEPENDS_TARGET+=" vfs.libarchive"
