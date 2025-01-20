@@ -1,0 +1,28 @@
+From 949c7b7b4d408b43fdcfaf042c741d9ec7c25880 Mon Sep 17 00:00:00 2001
+From: Garrett Brown <themagnificentmrb@gmail.com>
+Date: Sun, 31 Dec 2023 18:33:14 -0800
+Subject: [PATCH] [WIP] utils: Force a GBM BO to be used
+
+It would be preferable to change the registration order instead.
+
+Also, we will still need a buffer import check for the input stream stuff
+as that needs to use DMA heaps.
+---
+ xbmc/utils/BufferObjectFactory.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/xbmc/utils/BufferObjectFactory.cpp b/xbmc/utils/BufferObjectFactory.cpp
+index 13ada4bac6..5cc884239a 100644
+--- a/xbmc/utils/BufferObjectFactory.cpp
++++ b/xbmc/utils/BufferObjectFactory.cpp
+@@ -33,7 +33,7 @@ std::unique_ptr<CBufferObject> CBufferObjectFactory::CreateBufferObject(bool nee
+ void CBufferObjectFactory::RegisterBufferObject(
+     const std::function<std::unique_ptr<CBufferObject>()>& createFunc)
+ {
+-  m_bufferObjects.emplace_front(createFunc);
++  m_bufferObjects.emplace_back(createFunc);
+ }
+ 
+ void CBufferObjectFactory::ClearBufferObjects()
+-- 
+2.48.0
