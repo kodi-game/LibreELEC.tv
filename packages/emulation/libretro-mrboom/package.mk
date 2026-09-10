@@ -2,8 +2,8 @@
 # Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="libretro-mrboom"
-PKG_VERSION="0e52349c674860190397075ba3993efe5b65b887"
-PKG_SHA256="89cd6c6d0f94b9e59ccc57547e401e41223f2413c88bcf1c65e791866e567dc9"
+PKG_VERSION="89997083b6f492b5adbae3124a5ed2c784ace6eb"
+PKG_SHA256="fa84d590cdefa54a892ecba71781f4c0ec091a51fb42525852a23ff3e85c1105"
 PKG_LICENSE="MIT"
 PKG_SITE="https://github.com/libretro/mrboom-libretro"
 PKG_URL="https://github.com/kodi-game/mrboom-libretro/archive/${PKG_VERSION}.tar.gz"

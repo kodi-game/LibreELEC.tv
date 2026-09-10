@@ -2,8 +2,8 @@
 # Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="libretro-bsnes-mercury-performance"
-PKG_VERSION="ac0b6b1fe5cb9448492f4c6b3d815205eefbd142"
-PKG_SHA256="f3b846b7d1280c3adb34055aaf272deedf0279d4bf3de28eada6d17e7bc1178a"
+PKG_VERSION="ea22363fb0c1ebe92e7a70cdf55e9bb43f9207be"
+PKG_SHA256="5114fbfae7cc0e1c6479589ae43cd546acff9449cdd6849c7fab0b14c1c53214"
 PKG_LICENSE="GPL-3.0-only"
 PKG_SITE="https://github.com/libretro/bsnes-mercury"
 PKG_URL="https://github.com/libretro/bsnes-mercury/archive/${PKG_VERSION}.tar.gz"
