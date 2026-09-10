@@ -2,8 +2,8 @@
 # Copyright (C) 2023-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="game.libretro.a5200"
-PKG_VERSION="2.0.2.22-Omega"
-PKG_SHA256="9ca56f703211f712d004a94ca2498cebc27f77e17e7b76f85692e086bdec81af"
+PKG_VERSION="2.0.2.26-Omega"
+PKG_SHA256="1a33ac9c3bb0cb9b0ed3e9467d43a0fb02e8c1a7bdeb60b73d77d25e90b8414a"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL-2.0-or-later"

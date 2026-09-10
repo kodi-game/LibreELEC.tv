@@ -2,9 +2,9 @@
 # Copyright (C) 2023-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="game.libretro.cannonball"
-PKG_VERSION="0.0.1.40-Omega"
-PKG_SHA256="2a02b908783313856a2adbebcbf1825ec76be2b9cdd26135f6616fe270e75fde"
-PKG_REV="2"
+PKG_VERSION="0.0.1.42-Omega"
+PKG_SHA256="438f1aa935e076b0297ddc7a3842b3ffdbf8a95ad74831d239d1ff21882f2373"
+PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="LicenseRef-Non-commercial"
 PKG_SITE="https://github.com/kodi-game/game.libretro.cannonball"

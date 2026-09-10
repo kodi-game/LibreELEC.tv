@@ -2,8 +2,8 @@
 # Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="game.libretro.handy"
-PKG_VERSION="0.97.0.47-Omega"
-PKG_SHA256="6cfacfe4c541a88987ab95cfd2f32ac398000e9585c655ad69fd94040ce16f39"
+PKG_VERSION="0.97.0.49-Omega"
+PKG_SHA256="76af3e245772006f58200fd9ff1f0953b1f8ed053005d6d83d273004a5b28885"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="Zlib"
